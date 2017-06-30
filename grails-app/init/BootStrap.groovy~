@@ -1,0 +1,11 @@
+package myapp
+
+class BootStrap {
+
+    def init = { servletContext ->
+	def nissan = new Make(name: 'Nissan').save()
+        def ford = new Make(name: 'Ford').save()
+    }
+    def destroy = {
+    }
+}
